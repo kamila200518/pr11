@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпадающее меню</title>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn" id="dropdownButton">Меню</button>
+        <div class="dropdown-content" id="dropdownContent">
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <a href="#">О нас</a>
+        </div>
+    </div>
+
+    <script src="js/js.js"></script>
+</body>
+</html>
+
+<style>
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 700px;
+}
+
+.dropbtn {
+    background-color: pink;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    z-index: 1;
+    animation: fadeIn 0.3s;
+}
+
+.dropdown-content a {
+    font-size: 13px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+</style>
